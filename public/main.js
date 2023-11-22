@@ -1,4 +1,4 @@
-var socket = io.connect('https://chathostferrer2.onrender.com', { 'forceNew': true });
+var socket = io.connect('https://chathostferrer2.onrender.com/');
 //Parte del cliente conectamos con localhost
 //escuchamos el evento messages
 // data tendr� el array de mensajes  que env�a el servidor
