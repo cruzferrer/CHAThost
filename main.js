@@ -25,21 +25,15 @@ io.on('connection', function(socket) {
   socket.emit('messages', messages);
 
   socket.on('new-message', function(data) {
-    
+
     messages.push(data);
 
     io.sockets.emit('messages', messages);
   });
-});
+});s
 
 server.listen(8080, function() {  
   console.log("Servidor corriendo en https://chathostferrer2.onrender.com");
 });
 
-function sent (sas){
-  console.log(sas);
-};
 
-module.exports = {
-  sent: sent
-};

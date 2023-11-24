@@ -22,37 +22,29 @@ function render(data) {
 }
 
 
-/**
-function valid(e) {
-
-
-  var user = document.getElementById('username').value;
-  
-  
-
-}
-
-**/
-
-
-
 // main.js
-
-
-
-const f = require("../main.js");
-
 
 
 
 
 function addMessage(e) {
+
+  var USER = document.getElementById('username').value;
+  var TEXT = document.getElementById('texto').value;
+
+  
+
+
+
   var message = {
-    author: document.getElementById('username').value,
-    text: document.getElementById('texto').value
+    author: USER,
+    text: TEXT
   };
 
+
   var alerta = document.getElementById('alerta');
+
+  
 
  
   if (message.author == "" || message.text == "") {
@@ -60,8 +52,8 @@ function addMessage(e) {
     
   } else {
     alerta.style.display = 'none';
-    f.sent(message.author);
-    f.sent(message.text);
+  
+    
     socket.emit('new-message', message);
     document.getElementById('texto').value = '';
   }
