@@ -29,7 +29,7 @@ function addMessage(e) {
   var USER = document.getElementById('username').value;
   var TEXT = document.getElementById('texto').value;
 
-  var userRegex = /^[a-zA-Z0-9]{1,20}$/;
+  var userRegex = /^[a-zA-Z0-9 ]{1,20}$/;
   var textRegex = /^[a-zA-Z0-9¿? ]{1,250}$/;
 
   if (!userRegex.test(USER)) {
