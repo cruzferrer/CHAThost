@@ -14,6 +14,7 @@ function render(data) {
               <em>${elem.text}</em>
             </div>`);
   }).join(" ");
+  
 
 
   document.getElementById('messages').innerHTML = html;
