@@ -9,7 +9,7 @@ var io = require('socket.io')(server , {
 
 
 var messages = [{  
-  id: 1,
+  id: "A chatear!!!",
   text: "CHAT",
 }];
 
@@ -32,24 +32,6 @@ io.on('connection', function(socket) {
   });
 });
 
-/**
- * export function sent(user, text) {
-
-  console.log('Mensaje enviado:', user, text);
-
-}
-
- * 
- * 
- */
-// Configurar EJS como el motor de vistas
-app.set('view engine', 'ejs');
-
-app.get('/main.ejs', function(req, res) {
-  var name = 'hello';
-  // Renderizar el archivo EJS y pasar la variable
-  res.render('main', {name: name});
-});
 
 
 

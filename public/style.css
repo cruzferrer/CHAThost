@@ -55,19 +55,28 @@
 /*  aaaa esto es de 1 */
 
 #aaa{
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 40%;
+    
+    justify-content: center
 
 }
-
+input {
+    font-size: 20px; /* Ajusta este valor a tu gusto */
+  }
+  
 #title11 {
-
-    position: absolute;
-    top: 30%;
-    margin-left: 3%;
+    position: relative;
+    order: 1;
 
 }
+#FORM{
+    order: 2;
+    padding: 10px;
+}
+
 
 /*aaaaaaa*/
 
