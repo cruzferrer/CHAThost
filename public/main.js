@@ -21,9 +21,8 @@ function render(data) {
 
 
 };
-// main.js
-
 function enviar() {
+
   var inombre = document.getElementById('user').value;
   var userRegex = /^[a-zA-Z0-9 ]{1,20}$/;
 
@@ -42,15 +41,14 @@ function enviar() {
     }
     
   }
-}
+};
 
 function render2() {
   var user = localStorage.getItem('nombre');
   var nombreUsuarioSpan = document.getElementById('nombreUsuario');
     nombreUsuarioSpan.textContent = user;
-    
-  
-}
+
+};
 
 
 function addMessage(e) {

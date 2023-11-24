@@ -6,43 +6,25 @@
   <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
   <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="./style.css">
-
-  
-
 </head>  
 <body id="main">  
   <div id="title">
     <h1>CHAT... tu nombre es <span id="nombreUsuario"></span>
-      
-
     </h1>
-    
-
   </div>
-
   <div id="mss" class="scroll-container">
-    <div id="messages" class="scroll-content">
-      
+    <div id="messages" class="scroll-content">  
     </div>
   <br/>
   </div>
-  
- 
-  
   <div id="formulario">
     <form onsubmit="return addMessage(this)">
       <input type="text" id="texto" placeholder="Mensaje...">
       <input type="submit" id="button"  value="Enviar!">
     </form>
   </div>
-  
-  
-  
   <script>
     render2();
   </script>
-  
-
-
 </body>  
 </html>
