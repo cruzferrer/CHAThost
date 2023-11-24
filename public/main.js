@@ -46,10 +46,8 @@ function enviar() {
 
 function render2() {
   var user = localStorage.getItem('nombre');
-  var usernameInput = document.getElementById('username');
   var nombreUsuarioSpan = document.getElementById('nombreUsuario');
     nombreUsuarioSpan.textContent = user;
-    usernameInput.value = user;
     
   
 }
