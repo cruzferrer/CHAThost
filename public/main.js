@@ -30,7 +30,7 @@ function addMessage(e) {
   var TEXT = document.getElementById('texto').value;
 
   var userRegex = /^[a-zA-Z0-9]{1,20}$/;
-  var textRegex = /^[a-zA-Z0-9¿?]{1,250}$/;
+  var textRegex = /^[a-zA-Z0-9¿? ]{1,250}$/;
 
   if (!userRegex.test(USER)) {
     alert("El nombre de usuario no es válido. Debe tener entre 1 y 20 caracteres y no puede contener caracteres especiales.");
