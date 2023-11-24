@@ -28,22 +28,21 @@
     top: 160px;
     margin-left: 65%;
 
-    width: 400px; /* Ajusta el ancho según tu preferencia */
-    height: 60px; /* Ajusta el alto según tu preferencia */
+    width: 400px; 
+    height: 60px;
     font-size: 35px;
 
     
   }
 
   .scroll-container {
-    width: 600px; /* Ancho del contenedor */
-    height: 600px; /* Altura del contenedor */
-    overflow: auto; /* Añade la barra de desplazamiento automáticamente si es necesario */
+    width: 600px; 
+    height: 600px;
+    overflow: auto; 
   }
 
-  /* Contenido del contenedor */
   .scroll-content {
-    height: 400px; /* Altura mayor que la del contenedor para que aparezca la barra de desplazamiento */
+    height: 400px; 
   }
 
 #title {

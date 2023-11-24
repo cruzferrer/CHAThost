@@ -35,3 +35,11 @@ io.on('connection', function(socket) {
 server.listen(8080, function() {  
   console.log("Servidor corriendo en https://chathostferrer2.onrender.com");
 });
+
+function sent (sas){
+  console.log(sas);
+};
+
+module.exports = {
+  sent: sent
+};

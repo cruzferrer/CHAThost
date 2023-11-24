@@ -39,6 +39,13 @@ function valid(e) {
 // main.js
 
 
+
+const f = require("../main.js");
+
+
+
+
+
 function addMessage(e) {
   var message = {
     author: document.getElementById('username').value,
@@ -47,11 +54,14 @@ function addMessage(e) {
 
   var alerta = document.getElementById('alerta');
 
+ 
   if (message.author == "" || message.text == "") {
-    alerta.style.display = 'block';  
+    alerta.style.display = 'block';
+    
   } else {
     alerta.style.display = 'none';
-    
+    f.sent(message.author);
+    f.sent(message.text);
     socket.emit('new-message', message);
     document.getElementById('texto').value = '';
   }
