@@ -6,7 +6,7 @@
   <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
   
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <script src="main.js"></script>
+  <script src="main.html"></script>
 
   
 
@@ -19,7 +19,7 @@
   <div id="FORM">
     <form onsubmit="event.preventDefault(); enviar();">
       <h2>
-                     INGRESA TU NOMBRE
+                   INGRESA TU NOMBRE
       </h2>
       
       <input type="text" id="user" placeholder="Tu Nombre">
@@ -27,6 +27,9 @@
     </form>
     
   </div>
+  <script>
+    enviar();
+  </script>
   
   <div class="alert-card" id="alerta">Campo vacío padrinooo</div>
 
