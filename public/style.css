@@ -25,8 +25,9 @@
     padding: 12px;
     border-radius: 8px;
     margin-bottom: 10px;
-    left: 9%;
     top: 160px;
+    margin-left: 65%;
+
     width: 400px; /* Ajusta el ancho según tu preferencia */
     height: 60px; /* Ajusta el alto según tu preferencia */
     font-size: 35px;

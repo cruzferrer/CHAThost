@@ -22,7 +22,22 @@ function render(data) {
 }
 
 
+/**
+function valid(e) {
+
+
+  var user = document.getElementById('username').value;
+  
+  
+
+}
+
+**/
+
+
+
 // main.js
+
 
 function addMessage(e) {
   var message = {
@@ -33,10 +48,10 @@ function addMessage(e) {
   var alerta = document.getElementById('alerta');
 
   if (message.author == "" || message.text == "") {
-    alerta.style.display = 'block';
+    alerta.style.display = 'block';  
   } else {
     alerta.style.display = 'none';
-
+    
     socket.emit('new-message', message);
     document.getElementById('texto').value = '';
   }
