@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">
+  <title>CHATT</title>
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  
+
+</head>  
+<body>  
+  <div id="title">
+    <h1>CHAT</h1>
+  </div>
+
+  <div id="mss" class="scroll-container">
+    <div id="messages" class="scroll-content">
+      
+    </div>
+  <br/>
+  </div>
+  
+ 
+  
+  <div id="formulario">
+    <form onsubmit="return addMessage(this)">
+      <input type="text" id="username" placeholder="Tu Nombre" >
+      <input type="text" id="texto" placeholder="Mensaje...">
+      <input type="submit" id="button"  value="Enviar!">
+    </form>
+  </div>
+  
+  <div class="alert-card" id="alerta">Campo vacío padrinooo</div>
+
+  
+  
+</body>  
+</html>

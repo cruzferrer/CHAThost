@@ -23,6 +23,7 @@ function render(data) {
 // main.js
 
 
+
 function addMessage(e) {
 
   var USER = document.getElementById('username').value;

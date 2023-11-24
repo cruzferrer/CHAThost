@@ -52,6 +52,25 @@
 
 }
 
+/*  aaaa esto es de 1 */
+
+#aaa{
+    display: flex;
+    align-items: center;
+    margin-left: 40%;
+
+}
+
+#title11 {
+
+    position: absolute;
+    top: 30%;
+    margin-left: 3%;
+
+}
+
+/*aaaaaaa*/
+
 #mss {
     position: absolute;
     top: 10%;
