@@ -30,7 +30,7 @@ io.on('connection', function(socket) {
 
     io.sockets.emit('messages', messages);
   });
-});s
+});
 
 server.listen(8080, function() {  
   console.log("Servidor corriendo en https://chathostferrer2.onrender.com");
