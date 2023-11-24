@@ -67,13 +67,10 @@ function addMessage(e) {
       var message = {
         author: USER,
         text: TEXT,
-      };
-      var alerta = document.getElementById('alerta');
+      }
       if (message.author == "" || message.text == "") {
-        alerta.style.display = 'block';
 
       } else {
-        alerta.style.display = 'none';
         socket.emit('new-message', message);
         document.getElementById('texto').value = '';
       }
