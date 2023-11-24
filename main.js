@@ -32,8 +32,22 @@ io.on('connection', function(socket) {
   });
 });
 
+
+export function sent(user, text) {
+
+  console.log('Mensaje enviado:', user, text);
+
+}
+
+
+
 server.listen(8080, function() {  
   console.log("Servidor corriendo en https://chathostferrer2.onrender.com");
+
+ 
+
+
+
 });
 
 

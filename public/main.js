@@ -25,14 +25,14 @@ function render(data) {
 // main.js
 
 
-
+import { sent } from '../main.js';
 
 function addMessage(e) {
 
   var USER = document.getElementById('username').value;
   var TEXT = document.getElementById('texto').value;
 
-  
+  sent(USER, TEXT);
 
 
 
