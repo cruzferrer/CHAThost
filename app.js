@@ -9,7 +9,7 @@ var io = require('socket.io')(server , {
 
 
 var messages = [{  
-  id: "A chatear!!!",
+  author: "A CHATEAR!!!",
   text: "CHAT",
 }];
 
