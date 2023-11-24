@@ -22,20 +22,48 @@ function render(data) {
 };
 // main.js
 
+function enviar() {
+  var inombre = document.getElementById('user').value;
+  var userRegex = /^[a-zA-Z0-9 ]{1,20}$/;
+
+  if (inombre === '') {
+    alert('INGRESA ALGO');
+  } else {
+
+
+    if (!userRegex.test(inombre)) {
+      alert("El nombre no es válido. Debe tener entre 1 y 20 caracteres y los números del 1 al 9.");
+    }
+    else{
+      localStorage.setItem('nombre', inombre);
+      window.open("main.html");
+      render2(); 
+    }
+    
+  }
+}
+
+function render2() {
+  var user = localStorage.getItem('nombre');
+  var usernameInput = document.getElementById('username');
+  var nombreUsuarioSpan = document.getElementById('nombreUsuario');
+    nombreUsuarioSpan.textContent = user;
+    usernameInput.value = user;
+    
+  
+}
 
 
 function addMessage(e) {
 
-  var USER = document.getElementById('username').value;
+  var USER = localStorage.getItem('nombre');
+
   var TEXT = document.getElementById('texto').value;
 
-  var userRegex = /^[a-zA-Z0-9 ]{1,20}$/;
+  
   var textRegex = /^[a-zA-Z0-9¿? ]{1,250}$/;
 
-  if (!userRegex.test(USER)) {
-    alert("El nombre de usuario no es válido. Debe tener entre 1 y 20 caracteres y no puede contener caracteres especiales.");
-  }
-  else {
+  
     if (!textRegex.test(TEXT)) {
       alert("El texto no es válido. Debe tener entre 1 y 250 caracteres y solo puede contener los caracteres ¿? y los números del 1 al 9.");
     }
@@ -56,7 +84,7 @@ function addMessage(e) {
         document.getElementById('texto').value = '';
       }
     }
-  };
+  
 
   return false;
 };

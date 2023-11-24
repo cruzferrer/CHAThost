@@ -12,7 +12,12 @@
 </head>  
 <body>  
   <div id="title">
-    <h1>CHAT</h1>
+    <h1>CHAT... tu nombre es <span id="nombreUsuario"></span>
+      
+
+    </h1>
+    
+
   </div>
 
   <div id="mss" class="scroll-container">
@@ -26,15 +31,17 @@
   
   <div id="formulario">
     <form onsubmit="return addMessage(this)">
-      <input type="text" id="username" placeholder="Tu Nombre" >
       <input type="text" id="texto" placeholder="Mensaje...">
       <input type="submit" id="button"  value="Enviar!">
     </form>
   </div>
   
+  
   <div class="alert-card" id="alerta">Campo vacío padrinooo</div>
+  <script>
+    render2();
+  </script>
 
-  
-  
+
 </body>  
 </html>

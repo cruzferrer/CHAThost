@@ -42,6 +42,14 @@ io.on('connection', function(socket) {
  * 
  * 
  */
+// Configurar EJS como el motor de vistas
+app.set('view engine', 'ejs');
+
+app.get('/main.ejs', function(req, res) {
+  var name = 'hello';
+  // Renderizar el archivo EJS y pasar la variable
+  res.render('main', {name: name});
+});
 
 
 

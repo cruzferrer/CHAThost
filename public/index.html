@@ -16,14 +16,15 @@
   </div>
 
   <div id="FORM">
-    <form action="./main.html" target="_blank">
+    <form onsubmit="event.preventDefault(); enviar();">
       <h2>
-        INGRESA TU NOMBRE
+                     INGRESA TU NOMBRE
       </h2>
       
       <input type="text" id="user" placeholder="Tu Nombre">
-      <button onclick="enviar()" id="button" type="submit">Enviar!</button>
+      <button id="button" type="submit">Enviar!</button>
     </form>
+    
   </div>
   
   <div class="alert-card" id="alerta">Campo vacío padrinooo</div>
