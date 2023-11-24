@@ -54,7 +54,6 @@ function render2() {
 function addMessage(e) {
 
   var USER = localStorage.getItem('nombre');
-
   var TEXT = document.getElementById('texto').value;
 
   
@@ -67,7 +66,7 @@ function addMessage(e) {
     else {
       var message = {
         author: USER,
-        text: TEXT
+        text: TEXT,
       };
       var alerta = document.getElementById('alerta');
       if (message.author == "" || message.text == "") {
@@ -75,8 +74,6 @@ function addMessage(e) {
 
       } else {
         alerta.style.display = 'none';
-
-
         socket.emit('new-message', message);
         document.getElementById('texto').value = '';
       }
