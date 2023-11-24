@@ -10,7 +10,7 @@ var io = require('socket.io')(server , {
 
 var messages = [{  
   author: "A CHATEAR!!!",
-  text: "CHAT",
+  text: "INTRODUCE UN MENSAJE...",
 }];
 
 app.use(express.static('public'));
